@@ -1,0 +1,78 @@
+.nav-bar {
+    display: flex;
+    background-color: teal;
+}
+a:hover{
+  background-color: lightgreen;
+}
+
+.home{
+    margin: 10px 10px;
+   
+  }
+  
+  .food{
+      margin: 10px 10px;
+  }
+  
+  .merchandise{
+      margin: 10px 10px;
+  }
+  
+  .login{
+      margin: 10px 10px;
+  }
+  
+  .animal{
+      margin: 10px 10px;
+  }
+  
+  .customers{
+      margin: 10px 10px;
+  }
+
+
+.home-link{
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.animal-link{
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none; 
+}
+
+.food-link{
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.customer-link{
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.merchandise-link{
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.login-link{
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+ 
