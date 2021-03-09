@@ -1,5 +1,5 @@
 import './App.css';
-import { Link, Route } from 'react-router-dom';
+import { Route, Router } from 'react-router-dom';
 import NavBar from './components/NavBar.js';
 import Home from './components/Home.js';
 import Food from './components/Food.js';
@@ -16,13 +16,13 @@ import './style/Customer.css';
 import './style/Login.css';
 import React from 'react';
 
-function App(props){
+function App(){
 
   return (
 
    <div className="App">
 
-     <NavBar/>
+    <NavBar/>
 
     <Route exact path="/">
     <Home />
