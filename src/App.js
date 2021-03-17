@@ -1,12 +1,12 @@
 import './App.css';
-import { Route, Router } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import NavBar from './components/NavBar.js';
 import Home from './components/Home.js';
 import Food from './components/Food.js';
 import Animal from './components/Animal.js';
 import Merchandise from './components/Merchandise.js';
-import Customer from './components/Customer';
-import Login from './components/Login';
+import Customer from './components/Customer.js';
+import Login from './components/Login.js';
 import './style/Home.css';
 import './style/NavBar.css';
 import './style/Food.css'
@@ -14,9 +14,11 @@ import './style/Animal.css';
 import './style/Merchandise.css';
 import './style/Customer.css';
 import './style/Login.css';
-import React from 'react';
+import React, {useState} from 'react';
 
 function App(){
+
+  
 
   return (
 
@@ -27,9 +29,9 @@ function App(){
     <Route exact path="/">
     <Home />
     </Route>
-    
+
     <Route path="/food">
-    <Food/>
+      <Food/>
     </Route>
 
     <Route path="/animals">

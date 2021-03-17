@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import React from 'react';
 import photo from '../photos/home-photo.jpg'
 import Login from './Login.js';
 import Food from './Food.js'; 
 import '../style/Food.css';
 import '../style/Login.css';
+import { Route, Link } from 'react-router-dom';
 
 class Home extends React.Component{
     constructor(props){

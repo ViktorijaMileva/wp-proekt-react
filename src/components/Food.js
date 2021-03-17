@@ -25,6 +25,7 @@ class Food extends React.Component{
         const items = this.state.food
         console.log(items);
         return(
+            <div>
             <div className= "table-div">
             <table className="tableFood">
             <tr>
@@ -47,6 +48,7 @@ class Food extends React.Component{
 
             
           </table>
+          </div>
           </div>
         )
     }

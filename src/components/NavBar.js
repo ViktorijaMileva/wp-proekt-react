@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 import Home from './Home.js';
 import Food from './Food.js';
 import Customer from './Customer.js';
@@ -10,6 +9,7 @@ import '../style/Food.css';
 import '../style/Home.css';
 import '../style/Customer.css';
 import '../style/Login.css';
+import { Route, Link } from 'react-router-dom';
 
 class NavBar extends React.Component{
     constructor(props){
