@@ -10,7 +10,6 @@ class Login extends React.Component{
             username: "",
             password: "",
             redirect: false,
-            showToaster: false
         };
         this.onChange = this.onChange.bind(this);
         this.submit = this.submit.bind(this);
@@ -25,8 +24,8 @@ class Login extends React.Component{
 
     submit(e){
         var obj = {
-            Username: this.state.username,
-            Password: this.state.password
+            username: this.state.username,
+            password: this.state.password
         };
 
         fetch("/login", {
@@ -38,16 +37,11 @@ class Login extends React.Component{
         })
         .then(response => response.json())
         .then(info => {
-            if(info.token){
-                console.log(info.token);
-                localStorage.setItem("token", info.token);
+                console.log(info.jwt);
+                localStorage.setItem("token", info.jwt);
                 this.setState({
                     redirect: true,
-                    showToaster: false
          });
-        } else{
-            this.setState({ showToaster: true });
-        }
         });
 
        }

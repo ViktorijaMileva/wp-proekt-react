@@ -7,6 +7,7 @@ import Animal from './components/Animal.js';
 import Merchandise from './components/Merchandise.js';
 import Customer from './components/Customer.js';
 import Login from './components/Login.js';
+import ProtectedRoute from './components/ProtectedRoute.js';
 import './style/Home.css';
 import './style/NavBar.css';
 import './style/Food.css'
@@ -30,9 +31,9 @@ function App(){
     <Home />
     </Route>
 
-    <Route path="/food">
+    <ProtectedRoute path="/food">
       <Food/>
-    </Route>
+    </ProtectedRoute>
 
     <Route path="/animals">
       <Animal/>

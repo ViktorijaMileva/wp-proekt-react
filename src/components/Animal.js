@@ -15,7 +15,11 @@ class Animal extends React.Component{
 
     componentDidMount(){
         
-        fetch("/animals")
+        fetch("/animals", {
+            headers: {
+                "Content-type": "application/json"
+            }
+        })
             .then(response => response.json())
             .then(result => {
                 this.setState({animals: result})
@@ -29,21 +33,10 @@ class Animal extends React.Component{
     render(){
         
         const items = this.state.animals;
-       // var x = [1,2,3,4];
-        
-        // function soberi(currentValue) {
-        //    return  currentValue;
-        // }
-        // function dodaj1( promenliva){
-        //    return promenliva+=1;
-        // }  
-        // (promenliva) => {  promenliva+=1  }
-        // x.map( (promenliva) => { return promenliva+=1} )
         
         console.log(items);
         return(
 
-            //{items.map((x) => <li> {x.name} {x.age} {x.description} {x.gender} {x.image} </li>)}
           
             <div className= "table-div">
             <table className="tableAnimals">
