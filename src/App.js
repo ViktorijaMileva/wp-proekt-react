@@ -31,9 +31,9 @@ function App(){
     <Home />
     </Route>
 
-    <ProtectedRoute path="/food">
+    <Route path="/food">
       <Food/>
-    </ProtectedRoute>
+    </Route>
 
     <Route path="/animals">
       <Animal/>

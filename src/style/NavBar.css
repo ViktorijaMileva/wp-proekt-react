@@ -1,9 +1,11 @@
 .nav-bar {
     display: flex;
-    background-color: teal;
+    background-color:#29568f;
 }
 a:hover{
-  background-color: lightgreen;
+  background-color: #052b4a;
+  text-decoration: none;
+  color: white;
 }
 
 .home{

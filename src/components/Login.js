@@ -1,7 +1,8 @@
 import { render } from '@testing-library/react';
 import React, {useState} from 'react';
 import { Redirect } from "react-router";
-
+import button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Login extends React.Component{
     constructor(props){
@@ -50,33 +51,41 @@ class Login extends React.Component{
            return this.state.redirect ? (
                <Redirect to={{pathname: "/"}} />
            ) : (
-         <form>      
+         <form className="container">      
             <p className="h4 text-center py-4">Login</p>
+            <div className="row">
+            <div className="form-group col-sm">
             <label for="username">Username </label>
             <input
               type="text"
               name="username"
+              className="form-control"
               placeholder="Enter your username..."
               onChange={this.onChange}
             />
-            <div></div>
-            
+            </div>
+
+            <div className="form-group col-sm">
             <label for="password">Password </label>
             <input
               type="password"
               name="password"
+              className="form-control"
               placeholder="Enter your password..."
               onChange={this.onChange}
             />
-            <div>
+            </div>
+            <div className="form-group col-sm">
               <button
-                className="btn btn-primary"
+                class="btn btn-primary"
                 type="button"
                 onClick={this.submit}
               >
                 Submit
                 </button>
                 </div>
+            </div>
+
 
                 </form>
 
