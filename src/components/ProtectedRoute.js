@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import {Route, Redirect} from 'react-router-dom';
 import decode from 'jwt-decode';
 
@@ -25,4 +25,4 @@ const ProtectedRoute = ({component:Component, ...rest}) => {
 				)
 			}
 		}}/>)}
-	export default ProtectedRoute;
+	export default ProtectedRoute;  */

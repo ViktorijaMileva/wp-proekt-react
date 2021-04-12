@@ -32,26 +32,12 @@
      margin-left: 10px;
  }
 
- .login-button:hover{
-   background-color: lightgreen;
+ .home-div {
+   margin-top: 20px;
  }
 
- 
- .login-button {
-  background-color: teal;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
+ .img-div {
+   margin-top: 35px;
+ }
 
-.login-link-button{
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
+

@@ -27,14 +27,14 @@ class Food extends React.Component{
         return(
             <div>
             <div className= "table-div">
-            <table className="tableFood">
+            <table className="table table-striped">
             <tr>
-              <th>Food</th>
-              <th>Intended for</th>
-              <th>Quantity</th>
-              <th>Description</th>
-              <th>Breed</th>
-              <th>Image</th>
+              <th scope="col">Food</th>
+              <th scope="col">Intended for</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Description</th>
+              <th scope="col">Intended For</th>
+              <th scope="col">Image</th>
             </tr>
             
             {items.map(item => <tr>
@@ -42,7 +42,7 @@ class Food extends React.Component{
                 <td>{item.intendedFor}</td>
                 <td>{item.quantity}</td>
                 <td>{item.description}</td>
-                <td>{item.breedList}</td>
+                <td>{item.intendedFor}</td>
                 <td>{item.image}</td>
             </tr>)}
 

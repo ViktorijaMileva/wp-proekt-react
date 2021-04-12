@@ -39,14 +39,14 @@ class Animal extends React.Component{
 
           
             <div className= "table-div">
-            <table className="tableAnimals">
+            <table className="table table-striped">
             <tr>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Description</th>
-              <th>Gender</th>
-              <th>Breed</th>
-              <th>Image</th>
+              <th scope="col">Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">Description</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Breed</th>
+              <th scope="col">Image</th>
             </tr>
             
             {items.map(item => <tr>
