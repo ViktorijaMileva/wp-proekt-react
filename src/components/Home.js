@@ -2,7 +2,7 @@ import React from 'react';
 import photo from '../photos/home-photo.jpg'
 import '../style/Food.css';
 import '../style/Login.css';
-import { Route, Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Home extends React.Component{

@@ -14,7 +14,6 @@ import './style/Animal.css';
 import './style/Merchandise.css';
 import './style/Customer.css';
 import './style/Login.css';
-import React, {useState} from 'react';
 
 function App(){
 

@@ -4,7 +4,7 @@ import '../style/Food.css';
 import '../style/Home.css';
 import '../style/Customer.css';
 import '../style/Login.css';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class NavBar extends React.Component{
     constructor(props){
