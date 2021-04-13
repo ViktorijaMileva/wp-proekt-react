@@ -15,7 +15,7 @@ class Home extends React.Component{
           <div className="home-div">
             <h2>Welcome to our shop</h2>
             <div className="img-div">
-              <img alt="logo-photo" src={photo}/>
+              <img src={photo} alt="logo" />
             </div>
             <div className="login-button">
               <Link to='/login' className="btn btn-primary btn-lg">Login</Link>
