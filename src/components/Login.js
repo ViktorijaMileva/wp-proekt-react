@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import { Redirect } from "react-router";
 import button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
