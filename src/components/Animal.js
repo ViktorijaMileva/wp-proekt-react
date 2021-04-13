@@ -1,9 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Food from './Food.js'; 
 import '../style/Food.css';
-import poodlePuppy from '../photos/poodle-puppy.jpg';
-import pinscherPuppy from '../photos/pinscher-puppy.jpg';
+
 
 class Animal extends React.Component{
     constructor(props){

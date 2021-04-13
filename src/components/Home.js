@@ -1,11 +1,8 @@
 import React from 'react';
 import photo from '../photos/home-photo.jpg'
-import Login from './Login.js';
-import Food from './Food.js'; 
 import '../style/Food.css';
 import '../style/Login.css';
 import { Route, Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Home extends React.Component{

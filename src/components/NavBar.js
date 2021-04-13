@@ -1,9 +1,4 @@
 import React from 'react';
-import Home from './Home.js';
-import Food from './Food.js';
-import Customer from './Customer.js';
-import Login from './Login.js';
-import Merchandise from './Merchandise.js';
 import '../style/Merchandise.css';
 import '../style/Food.css';
 import '../style/Home.css';
