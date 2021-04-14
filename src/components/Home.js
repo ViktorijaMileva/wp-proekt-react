@@ -4,6 +4,8 @@ import '../style/Food.css';
 import '../style/Login.css';
 import {Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ImageSlider from './ImageSlider.js';
+import { SliderData } from './SliderData';
 
 class Home extends React.Component{
     
@@ -19,6 +21,9 @@ class Home extends React.Component{
             </div>
             <div className="login-button">
               <Link to='/login' className="btn btn-primary btn-lg">Login</Link>
+            </div>
+            <div>
+            <ImageSlider slides={SliderData} />
             </div>
           </div>
         )
