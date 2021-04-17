@@ -1,6 +1,5 @@
 import { Redirect } from "react-router";
 import React from 'react';
-import button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Login extends React.Component{
@@ -47,6 +46,7 @@ class Login extends React.Component{
        }
 
        render(){
+
            return this.state.redirect ? (
                <Redirect to={{pathname: "/"}} />
            ) : (

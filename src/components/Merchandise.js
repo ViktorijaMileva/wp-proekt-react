@@ -10,7 +10,10 @@ class Merchandise extends React.Component{
 
     componentDidMount(){
 
-        fetch("/merchandise")
+        fetch("/merchandise",{
+            headers: {
+                "Authorization": localStorage.getItem("token")
+            }})
             .then(response => response.json())
             .then(result => {
                 this.setState({merchandise: result})

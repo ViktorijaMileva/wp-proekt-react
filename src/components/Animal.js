@@ -13,7 +13,7 @@ class Animal extends React.Component{
     }
 
     componentDidMount(){
-        
+    
         fetch("/animals", {
             headers: {
                 "Content-type": "application/json",
