@@ -10,7 +10,10 @@ class Food extends React.Component{
 
     componentDidMount(){
 
-        fetch("/food")
+        fetch("/food",{
+        headers: {
+            "Authorization": localStorage.getItem("token")
+        }})
             .then(response => response.json())
             .then(result => {
                 this.setState({food: result})

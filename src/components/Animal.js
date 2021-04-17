@@ -16,7 +16,8 @@ class Animal extends React.Component{
         
         fetch("/animals", {
             headers: {
-                "Content-type": "application/json"
+                "Content-type": "application/json",
+                "Authorization": localStorage.getItem("token")
             }
         })
             .then(response => response.json())
