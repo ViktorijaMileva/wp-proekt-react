@@ -32,13 +32,13 @@ class Login extends React.Component{
             method: "post",
             body: JSON.stringify(obj),
             headers: {
-                "Content-type": "application/json"
+                "Content-Type": "application/json"
             }
         })
-        .then(response => response.json())
+        .then(response => response.text())
         .then(info => {
-                console.log(info.jwt);
-                localStorage.setItem("token", info.jwt);
+                console.log(info);
+                localStorage.setItem("token", "Bearer " + info);
                 this.setState({
                     redirect: true,
          });
