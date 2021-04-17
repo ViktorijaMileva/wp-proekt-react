@@ -1,5 +1,7 @@
 import React from 'react';
 import '../style/Food.css';
+import AnimalPhotoSlider from '../sliders/AnimalsPhotoSlider.js';
+import {AnimalSliderData} from '../sliders/AnimalSliderData.js';
 
 
 class Animal extends React.Component{
@@ -34,7 +36,7 @@ class Animal extends React.Component{
         console.log(items);
         return(
 
-          
+            <div>
             <div className= "table-div">
             <table className="table table-striped">
             <tr>
@@ -43,7 +45,6 @@ class Animal extends React.Component{
               <th scope="col">Description</th>
               <th scope="col">Gender</th>
               <th scope="col">Breed</th>
-              <th scope="col">Image</th>
             </tr>
             
             {items.map(item => <tr>
@@ -52,15 +53,22 @@ class Animal extends React.Component{
                 <td>{item.description}</td>
                 <td>{item.gender}</td>
                 <td>{item.breed.breedName}</td>
-                <td>{item.image}</td>
             </tr>)}
-            
-              
         
-            
           </table>
+          </div>
+          <div className="slider-name">
+              <h2>Puppies photos</h2>
+          </div>
+
+          <div className="animals-slider">
+          <AnimalPhotoSlider slides={AnimalSliderData} />
+          </div>
+          
           
           </div>
+
+          
         
             
         )
