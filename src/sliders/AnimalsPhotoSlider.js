@@ -1,6 +1,6 @@
-import { SliderData } from './SliderData';
 import { useState } from 'react';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
+import {AnimalSliderData} from '../sliders/AnimalSliderData.js';
 
 const ImageSlider = ({ slides }) => {
     const [current, setCurrent] = useState(0);
@@ -24,7 +24,7 @@ const ImageSlider = ({ slides }) => {
         <section className="slider">
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-        {SliderData.map((slide, index) => {
+        {AnimalSliderData.map((slide, index) => {
             return(
                 <div className={index === current ? 'slide active' : 'slide'} key={index}>
                     {index === current && (<img src={slide.image} alt='slide' className="slider-images"/>)}

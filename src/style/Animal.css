@@ -11,7 +11,18 @@
 }
 
  .table-div{
-     width: 70%;
+     width: 99%;
      margin-top: 30px;
      margin-left: 10px;
+ }
+ 
+ .animals-slider {
+     width: 100%;
+ }
+
+ .slider-name {
+     text-align: center;
+     color: #052b4a;
+     margin-top: 30px;
+     
  }
