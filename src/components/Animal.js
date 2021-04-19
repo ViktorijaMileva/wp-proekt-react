@@ -15,10 +15,10 @@ class Animal extends React.Component{
     componentDidMount(){
     
         fetch("/animals", {
-            headers: {
-                "Content-type": "application/json",
-                "Authorization": localStorage.getItem("token")
-            }
+           headers: {
+               "Content-type": "application/json",
+               "Authorization": localStorage.getItem("token")
+           }
         })
             .then(response => response.json())
             .then(result => {
