@@ -1,6 +1,5 @@
 import { Redirect } from "react-router";
 import React from 'react';
-import button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Login extends React.Component{
@@ -47,6 +46,7 @@ class Login extends React.Component{
        }
 
        render(){
+
            return this.state.redirect ? (
                <Redirect to={{pathname: "/"}} />
            ) : (
@@ -56,6 +56,7 @@ class Login extends React.Component{
             <div className="form-group col-sm">
             <label for="username">Username </label>
             <input
+              id="username"
               type="text"
               name="username"
               className="form-control"
@@ -67,6 +68,7 @@ class Login extends React.Component{
             <div className="form-group col-sm">
             <label for="password">Password </label>
             <input
+              id="password"
               type="password"
               name="password"
               className="form-control"
@@ -77,6 +79,7 @@ class Login extends React.Component{
             <div className="form-group col-sm">
               <button
                 class="btn btn-primary"
+                id="submit-buttton"
                 type="button"
                 onClick={this.submit}
               >

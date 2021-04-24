@@ -14,10 +14,9 @@ import './style/Animal.css';
 import './style/Merchandise.css';
 import './style/Customer.css';
 import './style/Login.css';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App(){
-
-  
 
   return (
 
@@ -29,22 +28,14 @@ function App(){
     <Home />
     </Route>
 
-    <Route path="/food">
-      <Food/>
-    </Route>
+    <ProtectedRoute path="/food" component={Food} />
 
-    <Route path="/animals">
-      <Animal/>
-    </Route>
+    <ProtectedRoute path="/animals" component={Animal} />
 
-    <Route path="/merchandise">
-      <Merchandise/>
-    </Route>
+    <ProtectedRoute path="/merchandise" component={Merchandise} />
 
-    <Route path="/customer">
-      <Customer/>
-    </Route>
-
+    <ProtectedRoute path="/customer" component={Customer} />
+     
     <Route path="/login">
       <Login/>
     </Route>

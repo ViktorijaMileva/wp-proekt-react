@@ -10,7 +10,11 @@ class Customer extends React.Component{
 
     componentDidMount(){
 
-        fetch("/customer")
+        fetch("/customer", 
+        {
+            headers: {
+                "Authorization": localStorage.getItem("token")
+            }})
             .then(response => response.json())
             .then(result => {
                 this.setState({customer: result})

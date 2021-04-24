@@ -33,6 +33,10 @@ a:hover{
       margin: 10px 10px;
   }
 
+  .logout{
+      margin: 10px 10px;
+  }
+
 
 .home-link{
     color: white;
@@ -63,6 +67,13 @@ a:hover{
 }
 
 .merchandise-link{
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logout-link{
     color: white;
     padding: 10px 20px;
     text-align: center;

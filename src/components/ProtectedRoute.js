@@ -1,28 +1,31 @@
-/* import React from 'react';
+import React from 'react';
 import {Route, Redirect} from 'react-router-dom';
-import decode from 'jwt-decode';
-
 
 const ProtectedRoute = ({component:Component, ...rest}) => {
-		const token = localStorage.getItem('jwt');
+		const token = localStorage.getItem("token");
+		console.log(token);
 	return (
 
 		<Route {...rest}
 		render={ props=>{
 
-			if((jwt != null) && !(decode(jwt).exp < new Date().getTime()/1000)){
-				console.log(decode(jwt).exp);	
-				return <Component {...props}/>
+			if (token) {
+				console.log("component")
+				return <Component { ...props }/>
 			}
-			else {
-				return (
-				<Redirect to={{
-						pathname:'/login',
-						state:{
-							from:props.location
+			else{
+				console.log("redirected");
+				return <Redirect to= {{
+					pathname: '/login',
+					state: {
+						from: props.location
 					}
-				}}/>
-				)
+				}} />
+				
 			}
-		}}/>)}
-	export default ProtectedRoute;  */
+
+		}
+	}/>
+	)
+}
+	export default ProtectedRoute; 

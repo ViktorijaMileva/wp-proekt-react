@@ -8,7 +8,6 @@ import ImageSlider from '../sliders/ImageSlider.js';
 import { SliderData } from '../sliders/SliderData';
 
 class Home extends React.Component{
-    
 
     render(){
        
